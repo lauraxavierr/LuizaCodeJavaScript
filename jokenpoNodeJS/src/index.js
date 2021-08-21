@@ -1,3 +1,6 @@
-const options = require('./data')
+const options = require('./data');
+const User = require('./controller/user');
 
-console.log(options);
+let jogar = new User({opt: options}).game();
+
+jogar
